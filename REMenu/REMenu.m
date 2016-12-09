@@ -23,6 +23,8 @@
 // THE SOFTWARE.
 //
 
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "REMenu.h"
 #import "REMenuItem.h"
 #import "REMenuItemView.h"

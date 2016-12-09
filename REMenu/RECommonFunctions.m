@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 //
 
+#import <UIKit/UIKit.h>
 #import "RECommonFunctions.h"
 
 BOOL REUIKitIsFlatMode()

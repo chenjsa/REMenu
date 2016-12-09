@@ -25,7 +25,43 @@
 		30E0F7AD16D54641001949EA /* REMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E0F7A916D54641001949EA /* REMenuItem.m */; };
 		30E0F7AE16D54641001949EA /* REMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E0F7AB16D54641001949EA /* REMenuItemView.m */; };
 		30E0F7B116D54CE0001949EA /* REMenuContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E0F7B016D54CE0001949EA /* REMenuContainerView.m */; };
+		AF1671D61DFA9AE30073309F /* REMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1671CF1DFA9AE30073309F /* REMenu.framework */; };
+		AF1671D71DFA9AE30073309F /* REMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF1671CF1DFA9AE30073309F /* REMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF1671DB1DFA9B0A0073309F /* REMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E0F7A616D54641001949EA /* REMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF1671DC1DFA9B150073309F /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B35CF017E54BFA0082CE0E /* RECommonFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF1671DD1DFA9B150073309F /* REMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E0F7A816D54641001949EA /* REMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF1671DE1DFA9B150073309F /* REMenuItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E0F7AA16D54641001949EA /* REMenuItemView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AF1671DF1DFA9B150073309F /* REMenuContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E0F7AF16D54CE0001949EA /* REMenuContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF1671E11DFA9B720073309F /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B35CF117E54BFA0082CE0E /* RECommonFunctions.m */; };
+		AF1671E31DFA9B720073309F /* REMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E0F7A716D54641001949EA /* REMenu.m */; };
+		AF1671E51DFA9B720073309F /* REMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E0F7A916D54641001949EA /* REMenuItem.m */; };
+		AF1671E71DFA9B720073309F /* REMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E0F7AB16D54641001949EA /* REMenuItemView.m */; };
+		AF1671E91DFA9B720073309F /* REMenuContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E0F7B016D54CE0001949EA /* REMenuContainerView.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF1671D41DFA9AE30073309F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E0F77216D545F7001949EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF1671CE1DFA9AE30073309F;
+			remoteInfo = REMenuFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF1671C91DFA9A9E0073309F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AF1671D71DFA9AE30073309F /* REMenu.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		30A9E60619C628A600A68AF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -61,6 +97,8 @@
 		30E0F7AB16D54641001949EA /* REMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = REMenuItemView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		30E0F7AF16D54CE0001949EA /* REMenuContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuContainerView.h; sourceTree = "<group>"; };
 		30E0F7B016D54CE0001949EA /* REMenuContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenuContainerView.m; sourceTree = "<group>"; };
+		AF1671CF1DFA9AE30073309F /* REMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = REMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF1671D21DFA9AE30073309F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +106,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1671D61DFA9AE30073309F /* REMenu.framework in Frameworks */,
 				30E0F77E16D545F7001949EA /* UIKit.framework in Frameworks */,
 				30E0F78016D545F7001949EA /* Foundation.framework in Frameworks */,
 				30E0F78216D545F7001949EA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF1671CB1DFA9AE30073309F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +148,7 @@
 			children = (
 				30E0F7A516D54641001949EA /* REMenu */,
 				30E0F78316D545F7001949EA /* REMenuExample */,
+				AF1671D01DFA9AE30073309F /* REMenuFramework */,
 				30E0F77C16D545F7001949EA /* Frameworks */,
 				30E0F77B16D545F7001949EA /* Products */,
 			);
@@ -111,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				30E0F77A16D545F7001949EA /* REMenuExample.app */,
+				AF1671CF1DFA9AE30073309F /* REMenu.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,7 +214,30 @@
 			path = ../REMenu;
 			sourceTree = "<group>";
 		};
+		AF1671D01DFA9AE30073309F /* REMenuFramework */ = {
+			isa = PBXGroup;
+			children = (
+				AF1671D21DFA9AE30073309F /* Info.plist */,
+			);
+			path = REMenuFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AF1671CC1DFA9AE30073309F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF1671DB1DFA9B0A0073309F /* REMenu.h in Headers */,
+				AF1671DC1DFA9B150073309F /* RECommonFunctions.h in Headers */,
+				AF1671DD1DFA9B150073309F /* REMenuItem.h in Headers */,
+				AF1671DF1DFA9B150073309F /* REMenuContainerView.h in Headers */,
+				AF1671DE1DFA9B150073309F /* REMenuItemView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		30E0F77916D545F7001949EA /* REMenuExample */ = {
@@ -176,15 +247,35 @@
 				30E0F77616D545F7001949EA /* Sources */,
 				30E0F77716D545F7001949EA /* Frameworks */,
 				30E0F77816D545F7001949EA /* Resources */,
+				AF1671C91DFA9A9E0073309F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AF1671D51DFA9AE30073309F /* PBXTargetDependency */,
 			);
 			name = REMenuExample;
 			productName = REMenuExample;
 			productReference = 30E0F77A16D545F7001949EA /* REMenuExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AF1671CE1DFA9AE30073309F /* REMenuFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF1671D81DFA9AE30073309F /* Build configuration list for PBXNativeTarget "REMenuFramework" */;
+			buildPhases = (
+				AF1671CA1DFA9AE30073309F /* Sources */,
+				AF1671CB1DFA9AE30073309F /* Frameworks */,
+				AF1671CC1DFA9AE30073309F /* Headers */,
+				AF1671CD1DFA9AE30073309F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = REMenuFramework;
+			productName = REMenuFramework;
+			productReference = AF1671CF1DFA9AE30073309F /* REMenu.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -194,6 +285,12 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Roman Efimov";
+				TargetAttributes = {
+					AF1671CE1DFA9AE30073309F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 30E0F77516D545F7001949EA /* Build configuration list for PBXProject "REMenuExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -208,6 +305,7 @@
 			projectRoot = "";
 			targets = (
 				30E0F77916D545F7001949EA /* REMenuExample */,
+				AF1671CE1DFA9AE30073309F /* REMenuFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -219,6 +317,13 @@
 			files = (
 				30E0F78816D545F7001949EA /* InfoPlist.strings in Resources */,
 				30A9E60719C628A600A68AF8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF1671CD1DFA9AE30073309F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +350,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF1671CA1DFA9AE30073309F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF1671E11DFA9B720073309F /* RECommonFunctions.m in Sources */,
+				AF1671E31DFA9B720073309F /* REMenu.m in Sources */,
+				AF1671E51DFA9B720073309F /* REMenuItem.m in Sources */,
+				AF1671E71DFA9B720073309F /* REMenuItemView.m in Sources */,
+				AF1671E91DFA9B720073309F /* REMenuContainerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF1671D51DFA9AE30073309F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF1671CE1DFA9AE30073309F /* REMenuFramework */;
+			targetProxy = AF1671D41DFA9AE30073309F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		30E0F78616D545F7001949EA /* InfoPlist.strings */ = {
@@ -284,7 +409,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -308,7 +433,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -324,6 +449,7 @@
 				GCC_PREFIX_HEADER = "REMenuExample/REMenuExample-Prefix.pch";
 				INFOPLIST_FILE = "REMenuExample/REMenuExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -340,10 +466,96 @@
 				GCC_PREFIX_HEADER = "REMenuExample/REMenuExample-Prefix.pch";
 				INFOPLIST_FILE = "REMenuExample/REMenuExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AF1671D91DFA9AE30073309F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = REMenuFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.hirsch.REMenuFramework;
+				PRODUCT_MODULE_NAME = REMenu;
+				PRODUCT_NAME = REMenu;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF1671DA1DFA9AE30073309F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = REMenuFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.hirsch.REMenuFramework;
+				PRODUCT_MODULE_NAME = REMenu;
+				PRODUCT_NAME = REMenu;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -367,6 +579,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AF1671D81DFA9AE30073309F /* Build configuration list for PBXNativeTarget "REMenuFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF1671D91DFA9AE30073309F /* Debug */,
+				AF1671DA1DFA9AE30073309F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
